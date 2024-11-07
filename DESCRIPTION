@@ -2,8 +2,7 @@ Package: plotter
 Title: Makes a scatter plot for 2 numerical variables
 Version: 0.1.0
 Authors@R: 
-    person("Alison", "Luo", , "azluo@student.ubc.ca", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Alison", "Luo", , "azluo@student.ubc.ca", role = c("aut", "cre"))
 Description: This package creates a scatter plot from two specified numeric columns in a data frame. Users can customize the plot by adjusting axis labels, colors, and additional geom_point() parameters.
 License: MIT + file LICENSE
 Encoding: UTF-8
