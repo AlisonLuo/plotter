@@ -16,21 +16,19 @@ knitr::opts_chunk$set(
 
 ## Package Description
 
-This package provides a function that creates a scatter plot from two specified numeric columns in a data frame. Users can customize the plot by adjusting axis labels, colors, and additional `geom_point()` parameters. This is particularly useful for quick and professional visualizations of the relationship between two numerical variables.
+This package provides a function that creates a scatter plot from two specified numeric columns in a dataframe. Users can customize the plot by adjusting axis labels, colors, and additional `geom_point()` parameters. This is particularly useful for quick and professional visualizations of the relationship between two numerical variables.
 
 ## Installation
 
-You can install version 0.1.0 of the package from Github using the following command in your R Studio Console. Make sure that the `devtools` package is installed prior to this.
+You can install version 0.1.1 of the package from Github using the following command in your R Studio Console. Make sure that the `devtools` package is installed prior to this.
 
 ``` r
 devtools::install_github("AlisonLuo/plotter", ref = "0.1.1")
 ```
 
-After installing the package, load the `plotter` package into your R session using `library(plotter)`. You can now use the `scatter()` function to create scatter plots from dataframes in your R project!
-
 ## Example
 
-Here are some examples of how to use the `scatter()` function in this package:
+Below are some examples of how to use the `scatter()` function in the `plotter` package. Keep in mind that two of the three examples use the `penguins` dataframe, so make sure to load the palmerpenguins package using `library(palmerpenguins)`.
 
 ```{r example}
 library(plotter)
