@@ -37,6 +37,7 @@ and additional \code{geom_point()} function parameters.
 This function is a wrapper around the \code{pull()} function in the \code{dplyr} package as well as the \code{ggplot()} and \code{geom_point()} functions in the \code{ggplot2} package.
 }
 \examples{
+library(palmerpenguins)
 scatter(penguins, bill_length_mm, bill_depth_mm)
 scatter(penguins, bill_length_mm, bill_depth_mm, x_label = "Bill Length", y_label = "Bill Depth")
 }

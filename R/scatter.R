@@ -20,6 +20,7 @@
 #' @return A ggplot object representing the scatter plot of the specified variables.
 #' The plot displays points corresponding to the data in the x and y columns of the provided data frame.
 #' @examples
+#' library(palmerpenguins)
 #' scatter(penguins, bill_length_mm, bill_depth_mm)
 #' scatter(penguins, bill_length_mm, bill_depth_mm, x_label = "Bill Length", y_label = "Bill Depth")
 #' @export
@@ -44,7 +45,7 @@ scatter <- function(data, x, y, x_label = NULL, y_label = NULL, colour = "orchid
   }
 
   # Remove rows with NA values
-  data_clean <- na.omit(data)
+  data_clean <- stats::na.omit(data)
 
   # See if any valid data remains after dropping NA values
   if (nrow(data_clean) == 0) {
