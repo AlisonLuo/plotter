@@ -1,9 +1,9 @@
-Make a Scatter Plot
+Create a Scatter Plot from a Dataframe
 ================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Package Description
+## Package Description
 
 This package provides a function that creates a scatter plot from two
 specified numeric columns in a data frame. Users can customize the plot
@@ -13,11 +13,17 @@ visualizations of the relationship between two numerical variables.
 
 ## Installation
 
-You can install the package from Github using the following command:
+You can install version 0.1.0 of the package from Github using the
+following command in your R Studio Console. Make sure that the
+`devtools` package is installed prior to this.
 
 ``` r
 devtools::install_github("AlisonLuo/plotter", ref = "0.1.0")
 ```
+
+After installing the package, load the `plotter` package into your R
+session using `library(plotter)`. You can now use the `scatter()`
+function to create scatter plots from dataframes in your R project!
 
 ## Example
 

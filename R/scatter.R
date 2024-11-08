@@ -1,8 +1,8 @@
 #' @title
-#' Scatter plot creation
+#' Create a scatter plot from a dataframe
 #'
 #' @description
-#' The `scatter_plot()` function creates a scatter plot from two specified numeric columns
+#' The `scatter()` function creates a scatter plot from two specified numeric columns
 #' in a data frame. Users can customize the plot by adjusting axis labels, colors,
 #' and additional `geom_point()` function parameters.
 #'

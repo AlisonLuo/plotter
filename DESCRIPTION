@@ -1,5 +1,5 @@
 Package: plotter
-Title: Makes a scatter plot for 2 numerical variables
+Title: Create a scatter plot for 2 numerical variables from a dataframe
 Version: 0.1.0
 Authors@R: 
     person("Alison", "Luo", , "azluo@student.ubc.ca", role = c("aut", "cre"))

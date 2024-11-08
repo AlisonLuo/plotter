@@ -2,7 +2,7 @@
 % Please edit documentation in R/scatter.R
 \name{scatter}
 \alias{scatter}
-\title{Scatter plot creation}
+\title{Create a scatter plot from a dataframe}
 \usage{
 scatter(data, x, y, x_label = NULL, y_label = NULL, colour = "orchid4", ...)
 }
@@ -29,7 +29,7 @@ A ggplot object representing the scatter plot of the specified variables.
 The plot displays points corresponding to the data in the x and y columns of the provided data frame.
 }
 \description{
-The \code{scatter_plot()} function creates a scatter plot from two specified numeric columns
+The \code{scatter()} function creates a scatter plot from two specified numeric columns
 in a data frame. Users can customize the plot by adjusting axis labels, colors,
 and additional \code{geom_point()} function parameters.
 }
