@@ -13,12 +13,12 @@ visualizations of the relationship between two numerical variables.
 
 ## Installation
 
-You can install version 0.1.1 of the package from Github using the
+You can install version 0.1.2 of the package from Github using the
 following command in your R Studio Console. Make sure that the
 `devtools` package is installed prior to this.
 
 ``` r
-devtools::install_github("AlisonLuo/plotter", ref = "0.1.1")
+devtools::install_github("AlisonLuo/plotter", ref = "0.1.2")
 ```
 
 ## Example

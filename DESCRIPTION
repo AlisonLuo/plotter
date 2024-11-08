@@ -1,6 +1,6 @@
 Package: plotter
 Title: Create a scatter plot for 2 numerical variables from a dataframe
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     person("Alison", "Luo", , "azluo@student.ubc.ca", role = c("aut", "cre"))
 Description: This package contains a function that creates a scatter plot from two specified numeric columns in a dataframe. Users can customize the plot by adjusting axis labels, colors, and additional geom_point() parameters. The function must be passed a dataframe. It does not work when only given two vectors.
