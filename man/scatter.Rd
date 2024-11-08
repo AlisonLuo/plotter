@@ -34,7 +34,7 @@ in a data frame. Users can customize the plot by adjusting axis labels, colors,
 and additional \code{geom_point()} function parameters.
 }
 \details{
-This function is a wrapper around the \code{pull()} function in the \code{dplyr} package as well as the \code{ggplot()} and \code{geom_point()} functions in the \code{ggplot2} package.
+This function is a wrapper around the \code{drop_na()} functino in the \code{tidyr} package, the \code{pull()} function in the \code{dplyr} package, as well as the \code{ggplot()} and \code{geom_point()} functions in the \code{ggplot2} package.
 }
 \examples{
 library(palmerpenguins)

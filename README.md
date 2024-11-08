@@ -18,7 +18,7 @@ following command in your R Studio Console. Make sure that the
 `devtools` package is installed prior to this.
 
 ``` r
-devtools::install_github("AlisonLuo/plotter", ref = "0.1.0")
+devtools::install_github("AlisonLuo/plotter", ref = "0.1.1")
 ```
 
 After installing the package, load the `plotter` package into your R

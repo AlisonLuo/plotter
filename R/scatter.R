@@ -6,7 +6,7 @@
 #' in a data frame. Users can customize the plot by adjusting axis labels, colors,
 #' and additional `geom_point()` function parameters.
 #'
-#' @details This function is a wrapper around the `pull()` function in the `dplyr` package as well as the `ggplot()` and `geom_point()` functions in the `ggplot2` package.
+#' @details This function is a wrapper around the `drop_na()` functino in the `tidyr` package, the `pull()` function in the `dplyr` package, as well as the `ggplot()` and `geom_point()` functions in the `ggplot2` package.
 #' @param data A data frame containing the variables to be plotted. This parameter is named `data`
 #' because it represents the main data structure required for plotting.
 #' @param x The name of the variable for the x-axis, specified as a column in the data frame.
@@ -45,7 +45,7 @@ scatter <- function(data, x, y, x_label = NULL, y_label = NULL, colour = "orchid
   }
 
   # Remove rows with NA values
-  data_clean <- stats::na.omit(data)
+  data_clean <- tidyr::drop_na(data)
 
   # See if any valid data remains after dropping NA values
   if (nrow(data_clean) == 0) {

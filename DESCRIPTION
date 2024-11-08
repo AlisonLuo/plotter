@@ -1,17 +1,17 @@
 Package: plotter
 Title: Create a scatter plot for 2 numerical variables from a dataframe
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Alison", "Luo", , "azluo@student.ubc.ca", role = c("aut", "cre"))
-Description: This package creates a scatter plot from two specified numeric columns in a data frame. Users can customize the plot by adjusting axis labels, colors, and additional geom_point() parameters.
+Description: This package contains a function that creates a scatter plot from two specified numeric columns in a dataframe. Users can customize the plot by adjusting axis labels, colors, and additional geom_point() parameters. The function must be passed a dataframe. It does not work when only given two vectors.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports: 
+    tidyr,
     dplyr,
-    ggplot2,
-    stats
+    ggplot2
 Suggests: 
     testthat (>= 3.0.0),
     palmerpenguins
