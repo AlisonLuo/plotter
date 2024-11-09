@@ -1,5 +1,6 @@
 library(palmerpenguins)
 library(dplyr)
+
 test_that("Basic testing and NA value handling", {
   # Test 1: Standard use case with no NAs
   expect_silent(scatter(penguins, bill_length_mm, bill_depth_mm))

@@ -13,12 +13,12 @@ visualizations of the relationship between two numerical variables.
 
 ## Installation
 
-You can install version 0.1.2 of the package from Github using the
+You can install version 0.1.3 of the package from Github using the
 following command in your R Studio Console. Make sure that the
 `devtools` package is installed prior to this.
 
 ``` r
-devtools::install_github("AlisonLuo/plotter", ref = "0.1.2")
+devtools::install_github("AlisonLuo/plotter", ref = "0.1.3")
 ```
 
 ## Example
@@ -29,37 +29,43 @@ Below are some examples of how to use the `scatter()` function in the
 using `library(palmerpenguins)`.
 
 ``` r
+# load necessary packages
 library(plotter)
 library(palmerpenguins)
+```
 
-# Example using the penguins dataset
+Example 1 using the penguins dataset
+
+``` r
 scatter(penguins, bill_length_mm, bill_depth_mm)
 ```
 
-<img src="man/figures/README-example-1.png" width="100%" />
+<img src="man/figures/README-example1-1.png" width="100%" />
+
+Example 2 using a different dataset (mtcars) and incorporating custom
+axis labels
 
 ``` r
-
-# Example using a different dataset (mtcars) and incorporating custom axis labels
 scatter(mtcars, hp, mpg, 
         x_label = "Horsepower", 
         y_label = "Miles Per Gallon")
 ```
 
-<img src="man/figures/README-example-2.png" width="100%" />
+<img src="man/figures/README-example2-1.png" width="100%" />
+
+Example 3 using the penguins dataset, colouring points by species and
+customizing point size
 
 ``` r
-
-# Example using the penguins dataset, colouring points by species and customizing point size
 scatter(penguins, bill_length_mm, bill_depth_mm, 
         x_label = "Bill Length (mm)", 
         y_label = "Bill Depth (mm)", 
-        colour = "species",      # Colour points by species
+        colour = "species",     # Colour points by species
         size = 3,               # Customize point size
         alpha = 0.5)            # Adjust transparency of points
 ```
 
-<img src="man/figures/README-example-3.png" width="100%" />
+<img src="man/figures/README-example3-1.png" width="100%" />
 
 ## License
 
